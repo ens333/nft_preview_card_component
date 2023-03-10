@@ -1,0 +1,135 @@
+body {
+  max-width: 1440px;
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.card {
+  padding: 24px;
+  background-color: hsl(216, 50%, 16%);
+  width: 350px;
+  height: 596px;
+  border-radius: 15px;
+  margin: 152px auto;
+}
+.main--img-box {
+  position: relative;
+}
+.main--img {
+  width: 100%;
+  border-radius: 8px;
+}
+.alt--background {
+  position: absolute;
+  background-color: hsl(178, 100%, 50%, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.alt--img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.alt--background:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+h1 {
+  line-height: 28px;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 0;
+}
+h1:hover,
+.creator--text_span:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+.p1 {
+  color: hsl(215, 51%, 70%);
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.img--clock {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  pointer-events: none;
+}
+.img--eth {
+  width: 15px;
+  height: 22px;
+  margin-right: 7px;
+  vertical-align: middle;
+  pointer-events: none;
+}
+.creator--img {
+  width: 33px;
+  height: 33px;
+}
+.eth--info {
+  margin-top: 5px;
+}
+.eth--text {
+  display: inline-block;
+  vertical-align: middle;
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+  font-size: 16px;
+}
+.clock--text {
+  color: hsl(215, 51%, 70%);
+  font-size: 15px;
+  float: right;
+}
+.clock--text_days {
+  vertical-align: top;
+}
+.divider {
+  margin: 12px 0;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+.creator--img {
+  vertical-align: middle;
+}
+.creator--text {
+  margin-left: 12px;
+  font-size: 16px;
+  color: hsl(215, 51%, 70%);
+  display: inline-block;
+  vertical-align: middle;
+}
+.creator--text_span {
+  color: hsl(0, 0%, 100%);
+}
+.attribution {
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 280px;
+    margin: 62px auto;
+  }
+  .main--img-box {
+    width: 100%;
+  }
+  p {
+    font-size: 18px;
+  }
+  .attribution {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+}
